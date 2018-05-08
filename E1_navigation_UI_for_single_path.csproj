@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42CD2EE8-D955-52E2-5B33-02862900AABA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>5.3.4f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>Assets\Packages\Curvy\Base\ThirdParty\Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="DevTools">
+      <HintPath>Assets\Packages\DevTools\DevTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets\Plugins\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrController.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviderFactory.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerState.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GazeInputModule.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrEye.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrHead.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrPostRender.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrPreRender.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrProfile.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrViewer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Pose3D.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\StereoController.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\StereoRenderEffect.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrGaze.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazePointer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\VRDevices\AndroidDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\VRDevices\BaseAndroidDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\VRDevices\BaseVRDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\VRDevices\EditorDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\VRDevices\GvrDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\VRDevices\iOSDevice.cs" />
+    <Compile Include="Assets\Import\Campfire Pack\Script\SwitchView.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Interactions.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\ChaseCam.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\CurvyCamController.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\HeightMetadata.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\MDJunctionControl.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\MetaDataController.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\MotorController.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\MoveToNearestPoint.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\PaintSpline.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\PerformanceAPI.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\PerformanceDynamicSpline.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\RigidBodySplineController.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\RunnerController.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\SplineControllerInputRail.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\SplineRefMetadata.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\ToggleBehaviourByTrigger.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\TrainCarDrifter.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\TrainCarManager.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\TrainManager.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\UserValuesController.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\Scripts\VolumeControllerInput.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Base\SplineInputModuleBase.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Base\TRSModuleBase.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\BuildRasterizedPath.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\BuildShapeExtrusion.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\BuildVolumeCaps.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\BuildVolumeMesh.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\BuildVolumeSpots.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\ConformPath.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\CreateGameObject.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\CreateMesh.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\DebugVMesh.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\DebugVolume.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\InputGameObject.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\InputMesh.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\InputSplinePath.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\InputSplineShape.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\InputSpots.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\ModifierMixPaths.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\ModifierMixShapes.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\ModifierTRSMesh.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\ModifierTRSPath.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\ModifierTRSShape.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG Modules\Note.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGClasses.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGData.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGInterfaces.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGMeshResource.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGModule.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGModuleLink.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGModuleSlot.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGResource.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CGUtility.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\CurvyGenerator.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CG\MetaCGOptions.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyClasses.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyConnection.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyController.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyEvents.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyGizmoHelper.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyGlobalManager.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyMetadataBase.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyPropertyAttributes.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyShape.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyShape2D.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvySpline.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvySplineBase.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvySplineGroup.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvySplineSegment.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyUISpline.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\CurvyUtility.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\AlignToSpline.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\CurvyComponent.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\CurvyShaperDefinition.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\FollowSpline.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\Obsolete.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplineAlign.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplinePathCloneBuilder.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplinePathMeshBuilder.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplineShaper.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplineWalker.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplineWalkerCon.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Legacy\SplineWalkerDistance.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Shapes\CSCircle.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Shapes\CSPie.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Shapes\CSRectangle.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Shapes\CSRoundedRectangle.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Shapes\CSSpiral.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Shapes\CSStar.cs" />
+    <Compile Include="Assets\Packages\Curvy\Base\Unity50Compatibility.cs" />
+    <Compile Include="Assets\Packages\Curvy\Components\CurvyDefaultEventHandler.cs" />
+    <Compile Include="Assets\Packages\Curvy\Components\CurvyGLRenderer.cs" />
+    <Compile Include="Assets\Packages\Curvy\Components\CurvyLineRenderer.cs" />
+    <Compile Include="Assets\Packages\Curvy\Controllers\PathController.cs" />
+    <Compile Include="Assets\Packages\Curvy\Controllers\SplineController.cs" />
+    <Compile Include="Assets\Packages\Curvy\Controllers\UITextSplineController.cs" />
+    <Compile Include="Assets\Packages\Curvy\Controllers\VolumeController.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\ComponentPool.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\DTSingleton.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\DTVersionedMonoBehaviour.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\DuplicateEditorMesh.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\InspectorNote.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\PoolManager.cs" />
+    <Compile Include="Assets\Packages\DevTools\Components\PrefabPool.cs" />
+    <Compile Include="Assets\Script\FPSPlayerMove.cs" />
+    <Compile Include="Assets\Script\Follower.cs" />
+    <Compile Include="Assets\Script\GoAndTurn.cs" />
+    <Compile Include="Assets\Script\ItemShooter.cs" />
+    <Compile Include="Assets\Script\SelfDestroy.cs" />
+    <Compile Include="Assets\Script\UI_manager.cs" />
+    <Compile Include="Assets\Script\add_down_force.cs" />
+    <Compile Include="Assets\Script\angle.cs" />
+    <Compile Include="Assets\Script\bike_con.cs" />
+    <Compile Include="Assets\Script\block_adder.cs" />
+    <Compile Include="Assets\Script\bullet.cs" />
+    <Compile Include="Assets\Script\button_shound.cs" />
+    <Compile Include="Assets\Script\camera_con.cs" />
+    <Compile Include="Assets\Script\camera_direction.cs" />
+    <Compile Include="Assets\Script\change_sight.cs" />
+    <Compile Include="Assets\Script\coli_reader.cs" />
+    <Compile Include="Assets\Script\count_start_time.cs" />
+    <Compile Include="Assets\Script\data_manager.cs" />
+    <Compile Include="Assets\Script\devil.cs" />
+    <Compile Include="Assets\Script\devil_child.cs" />
+    <Compile Include="Assets\Script\devil_suffer.cs" />
+    <Compile Include="Assets\Script\distance_manager.cs" />
+    <Compile Include="Assets\Script\follow_P_R.cs" />
+    <Compile Include="Assets\Script\follow_rotate.cs" />
+    <Compile Include="Assets\Script\game_manager.cs" />
+    <Compile Include="Assets\Script\hover.cs" />
+    <Compile Include="Assets\Script\icon_co.cs" />
+    <Compile Include="Assets\Script\io_data.cs" />
+    <Compile Include="Assets\Script\look_at.cs" />
+    <Compile Include="Assets\Script\menu_con.cs" />
+    <Compile Include="Assets\Script\motion_data.cs" />
+    <Compile Include="Assets\Script\option_button.cs" />
+    <Compile Include="Assets\Script\point_shound.cs" />
+    <Compile Include="Assets\Script\random_number.cs" />
+    <Compile Include="Assets\Script\road_check.cs" />
+    <Compile Include="Assets\Script\rock.cs" />
+    <Compile Include="Assets\Script\rotate_reference.cs" />
+    <Compile Include="Assets\Script\s_map_con.cs" />
+    <Compile Include="Assets\Script\self_rotate.cs" />
+    <Compile Include="Assets\Script\self_rotate_wheel.cs" />
+    <Compile Include="Assets\Script\set_false.cs" />
+    <Compile Include="Assets\Script\shield.cs" />
+    <Compile Include="Assets\Script\show_coli_posi.cs" />
+    <Compile Include="Assets\Script\speed_by_add.cs" />
+    <Compile Include="Assets\Script\stay_position.cs" />
+    <Compile Include="Assets\Script\stuff_by_add.cs" />
+    <Compile Include="Assets\Script\zombie.cs" />
+    <Compile Include="Assets\Scripts\Common\SessionData.cs" />
+    <Compile Include="Assets\Scripts\Examples\ExampleInteractiveItem.cs" />
+    <Compile Include="Assets\Scripts\Examples\ExampleRenderScale.cs" />
+    <Compile Include="Assets\Scripts\Examples\ExampleRotation.cs" />
+    <Compile Include="Assets\Scripts\Examples\ExampleTouchpad.cs" />
+    <Compile Include="Assets\Scripts\Flyer\Asteroid.cs" />
+    <Compile Include="Assets\Scripts\Flyer\AsteroidExplosion.cs" />
+    <Compile Include="Assets\Scripts\Flyer\EnvironmentController.cs" />
+    <Compile Include="Assets\Scripts\Flyer\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\Scripts\Flyer\FlyerAlignmentChecker.cs" />
+    <Compile Include="Assets\Scripts\Flyer\FlyerGameController.cs" />
+    <Compile Include="Assets\Scripts\Flyer\FlyerHealthController.cs" />
+    <Compile Include="Assets\Scripts\Flyer\FlyerLaser.cs" />
+    <Compile Include="Assets\Scripts\Flyer\FlyerLaserController.cs" />
+    <Compile Include="Assets\Scripts\Flyer\FlyerMovementController.cs" />
+    <Compile Include="Assets\Scripts\Flyer\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\Scripts\Flyer\Ring.cs" />
+    <Compile Include="Assets\Scripts\Flyer\UIController.cs" />
+    <Compile Include="Assets\Scripts\Intro\IntroManager.cs" />
+    <Compile Include="Assets\Scripts\Maze\AICharacterControl.cs" />
+    <Compile Include="Assets\Scripts\Maze\AgentTrail.cs" />
+    <Compile Include="Assets\Scripts\Maze\CameraOrbit.cs" />
+    <Compile Include="Assets\Scripts\Maze\DestinationMarker.cs" />
+    <Compile Include="Assets\Scripts\Maze\ExitArea.cs" />
+    <Compile Include="Assets\Scripts\Maze\MazeGameController.cs" />
+    <Compile Include="Assets\Scripts\Maze\MazeTargetSetting.cs" />
+    <Compile Include="Assets\Scripts\Maze\Player.cs" />
+    <Compile Include="Assets\Scripts\Maze\SwitchButton.cs" />
+    <Compile Include="Assets\Scripts\Maze\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Scripts\Maze\Turret.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuAnimator.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuButton.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuItemPopout.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuSelectorMover.cs" />
+    <Compile Include="Assets\Scripts\ShootingGallery\ShootingGalleryController.cs" />
+    <Compile Include="Assets\Scripts\ShootingGallery\ShootingGalleryGun.cs" />
+    <Compile Include="Assets\Scripts\ShootingGallery\ShootingGalleryScore.cs" />
+    <Compile Include="Assets\Scripts\ShootingGallery\ShootingTarget.cs" />
+    <Compile Include="Assets\Scripts\ShootingGallery\UIController.cs" />
+    <Compile Include="Assets\Scripts\Utils\GUIArrows.cs" />
+    <Compile Include="Assets\Scripts\Utils\InputWarnings.cs" />
+    <Compile Include="Assets\Scripts\Utils\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Utils\PlatformDependentText.cs" />
+    <Compile Include="Assets\Scripts\Utils\Reticle.cs" />
+    <Compile Include="Assets\Scripts\Utils\ReturnToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Utils\SelectionRadial.cs" />
+    <Compile Include="Assets\Scripts\Utils\SelectionSlider.cs" />
+    <Compile Include="Assets\Scripts\Utils\UIFader.cs" />
+    <Compile Include="Assets\Scripts\Utils\UIMovement.cs" />
+    <Compile Include="Assets\Scripts\Utils\UITint.cs" />
+    <Compile Include="Assets\Scripts\Utils\VRCameraFade.cs" />
+    <Compile Include="Assets\Scripts\Utils\VRCameraUI.cs" />
+    <Compile Include="Assets\VRStandardAssets\Scripts\VRDeviceManager.cs" />
+    <Compile Include="Assets\VRStandardAssets\Scripts\VREyeRaycaster.cs" />
+    <Compile Include="Assets\VRStandardAssets\Scripts\VRFPSCounter.cs" />
+    <Compile Include="Assets\VRStandardAssets\Scripts\VRInput.cs" />
+    <Compile Include="Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
+    <Compile Include="Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+    <Compile Include="Assets\move.cs" />
+    <Compile Include="Assets\obj_active.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GoogleVR\Resources\SolidColor.shader" />
+    <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\GoogleVR\Resources\UnlitTexture.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\Import\NatureStarterKit2\info.txt" />
+    <None Include="Assets\Packages\Curvy Examples\_Resources\Shaders\HardsurfaceTriplanarPacked.shader" />
+    <None Include="Assets\Packages\Curvy Examples\_Resources\Shaders\ParticleAdditiveFresnel.shader" />
+    <None Include="Assets\Packages\Curvy Examples\_Resources\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Packages\Curvy\Base\ClassTemplates\CGModuleEditorTemplate.txt" />
+    <None Include="Assets\Packages\Curvy\Base\ClassTemplates\CGModuleTemplate.txt" />
+    <None Include="Assets\Packages\Curvy\Base\ClassTemplates\ShapeTemplate.txt" />
+    <None Include="Assets\Packages\Curvy\ReadMe.txt" />
+    <None Include="Assets\Packages\Curvy\link.xml" />
+    <None Include="Assets\VRSampleScenes\Shaders\UIOverlay.shader" />
+    <None Include="Assets\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
